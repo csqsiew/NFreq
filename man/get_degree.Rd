@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_degree.R
 \name{get_degree}
 \alias{get_degree}
-\title{Calculates the degree or neighborhood density of a word based on Levenshtein edit distance of 1.}
+\title{Calculates the degree or neighborhood density of a word based on Levenshtein edit distance of 1}
 \usage{
 get_degree(stimuli, database)
 }
@@ -15,7 +15,7 @@ get_degree(stimuli, database)
 A dataframe with \code{stimuli} and corresponding degree.
 }
 \description{
-Calculates the degree or neighborhood density of a word based on Levenshtein edit distance of 1.
+Calculates the degree or neighborhood density of a word based on Levenshtein edit distance of 1
 }
 \examples{
 # load a database first

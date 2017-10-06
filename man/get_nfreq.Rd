@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_nfreq.R
 \name{get_nfreq}
 \alias{get_nfreq}
-\title{Calculates the degree or neighborhood density of a word based on Levenshtein edit distance of 1.}
+\title{Calculates the neighborhood frequency of a word based on Levenshtein edit distance of 1}
 \usage{
 get_nfreq(stimuli, database)
 }
@@ -15,7 +15,7 @@ get_nfreq(stimuli, database)
 A dataframe with \code{stimuli} and corresponding neighborhood frequency (average frequency of its neighbors).
 }
 \description{
-Calculates the degree or neighborhood density of a word based on Levenshtein edit distance of 1.
+Calculates the neighborhood frequency of a word based on Levenshtein edit distance of 1
 }
 \examples{
 # load a database first

@@ -2,7 +2,7 @@
 % Please edit documentation in R/get_neighbors.R
 \name{get_neighbors}
 \alias{get_neighbors}
-\title{Outputs a list of 1-edit distance neighbors of a word.}
+\title{Outputs a list of 1-edit distance neighbors of a word}
 \usage{
 get_neighbors(stimuli, database)
 }
@@ -15,7 +15,7 @@ get_neighbors(stimuli, database)
 A dataframe with \code{stimuli} and list of its neighbors (if any).
 }
 \description{
-Outputs a list of 1-edit distance neighbors of a word.
+Outputs a list of 1-edit distance neighbors of a word
 }
 \examples{
 # load a database first
