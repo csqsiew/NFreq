@@ -33,7 +33,7 @@ get_neighbors <- function(stimuli, database) {
     # save word to output
     output$Stimuli[i] <- stimuli[i]
     # save degree to output
-    output$NeighborList[i] <- paste(vwr::levenshtein.neighbors(stimuli[i], data$Phono)[[1]], collapse = " ")
+    output$NeighborList[i] <- paste(levenshtein.neighbors(stimuli[i], data$Phono)[[1]], collapse = " ")
   }
 
   return(output)

@@ -33,7 +33,7 @@ get_degree <- function(stimuli, database) {
     # save word to output
     output$Stimuli[i] <- stimuli[i]
     # save degree to output
-    output$Degree[i] <- length(vwr::levenshtein.neighbors(stimuli[i], data$Phono)[[1]])
+    output$Degree[i] <- length(levenshtein.neighbors(stimuli[i], data$Phono)[[1]])
   }
 
   return(output)
