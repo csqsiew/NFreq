@@ -4,10 +4,10 @@ author: "CSQ Siew"
 date: "`r Sys.Date()`"
 output: word_document
 #rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{Vignette Title}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+#vignette: >
+#  %\VignetteIndexEntry{Vignette Title}
+#  %\VignetteEngine{knitr::rmarkdown}
+#  %\VignetteEncoding{UTF-8}
 ---
 
 ## Vignette Info    
@@ -46,11 +46,10 @@ library(dplyr)
 Note that it is **very important** that `words` and `data` are set up correctly in order for the functions to work (an error message will be returned otherwise). `words` should be a vector of character type. `data` should be a dataframe that minimally contains two columns, `Phono` (e.g., phonological transcriptions) and `Frequency` (e.g., your favorite log frequency measures). You can double check using the following:
 
 ```{r}
-# there is some sample data pre-loaded in the package for demonstration purposes
-# take a look 
-words
+words <- c('hWs', 'rod')
 class(words)        # character
 is.vector(words)    # should be TRUE
+data <- read.csv('NFreq_data.csv')
 head(data)
 is.data.frame(data) # should be TRUE
 ```
