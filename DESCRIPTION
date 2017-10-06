@@ -1,0 +1,18 @@
+Package: NFreq
+Title: Calculates the degree and neighborhood frequency of words
+Version: 0.0.0.9000
+Authors@R: person("Cynthia", "Siew", email = "cynsiewsq@gmail.com", role = c("aut", "cre"))
+Description: Calculates the degree and neighborhood frequency of words
+URL: https://github.com/csqsiew/NFreq
+Depends: R (>= 3.4.1)
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports:
+  dplyr,
+  stringdist,
+  vwr
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
