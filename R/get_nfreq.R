@@ -35,7 +35,8 @@ get_nfreq <- function(stimuli, database) {
     # save degree to output
     temp <- as.data.frame(levenshtein.neighbors(stimuli[i], data$Phono)[[1]])
     colnames(temp) <- 'Phono'
-    temp <- suppressWarnings(temp %>% dplyr::left_join(data, by = 'Phono'))
+    temp <- merge(temp, data, by = 'Phono', all.x = T)
+    #temp <- suppressWarnings(temp %>% dplyr::left_join(data, by = 'Phono'))
     output$NeighborFreq[i] <- mean(temp$Frequency)
   }
 
