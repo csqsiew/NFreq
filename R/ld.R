@@ -12,7 +12,7 @@ levenshtein.neighbors <-
 
 levenshtein.distance <-
   function(xsource, targets){
-    distances<-stringdist::stringdist(xsource, targets, method='osa') # to help the package find the stringdist function
+    distances<-stringdist::stringdist(xsource, targets, method='lv') # to help the package find the stringdist function
     names(distances)<-targets
     return(distances)
   }
